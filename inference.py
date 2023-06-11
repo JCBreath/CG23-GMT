@@ -136,7 +136,7 @@ if __name__== "__main__":
     parser = argparse.ArgumentParser(description='PyTorch Implementation of the paper: "GMT"')
     parser.add_argument('--epoch', type=int, default=4000)
     parser.add_argument('--max_epoch', type=int, default=4000)
-    parser.add_argument('--path', type=str, default='/mnt/g')
+    parser.add_argument('--data_path', type=str, default='/mnt/g')
     parser.add_argument('--model_path', type=str, default='/gmt_models/inference')
     parser.add_argument('--mode', type=str, default='train')
     parser.add_argument('--dataset', type=str, default='tangaroa')
@@ -193,14 +193,14 @@ if __name__== "__main__":
     
     print(param)
 
-    model_path = args.path + args.model_path + '/' + args.model + '/'
+    model_path = args.model_path
 
-    args.data_path = args.path + '/vis_data/'
+    args.data_path = args.data_path
     args.log_path = model_path + 'logs/'
     args.pth_path = model_path
     args.out_path = model_path + param['vars'][args.target] + '/'
     
-    check_path(args.path + args.model_path)
+    check_path(args.model_path)
     check_path(args.log_path)
     check_path(args.pth_path)
     check_path(args.out_path)
@@ -212,7 +212,7 @@ if __name__== "__main__":
     model = GMT(c_dim=c_dim)
     model_d = GMT_D()
     
-    model.load_state_dict(torch.load('{}{}{}.pth'.format(args.path, args.model_path, args.epoch)))
+    model.load_state_dict(torch.load('{}{}.pth'.format(args.model_path, args.epoch)))
 
     model.cuda()
     model_d.cuda()

@@ -125,7 +125,7 @@ if __name__== "__main__":
     parser = argparse.ArgumentParser(description='PyTorch Implementation of the paper: "GMT"')
     parser.add_argument('--epoch', type=int, default=0)
     parser.add_argument('--max_epoch', type=int, default=4000)
-    parser.add_argument('--path', type=str, default='/mnt/g')
+    parser.add_argument('--data_path', type=str, default='/mnt/g')
     parser.add_argument('--model_path', type=str, default='/gmt_models')
     parser.add_argument('--mode', type=str, default='train')
     parser.add_argument('--dataset', type=str, default='tangaroa')
@@ -137,12 +137,11 @@ if __name__== "__main__":
     args = parser.parse_args()
 
 
-    args.data_path = args.path + '/vis_data/'
-    args.log_path = args.path + args.model_path + '/logs/'
-    args.pth_path = args.path + args.model_path + '/pths/'
-    args.out_path = args.path + args.model_path + '/outs/'
+    args.log_path = args.model_path + '/logs/'
+    args.pth_path = args.model_path + '/pths/'
+    args.out_path = args.model_path + '/outs/'
     
-    check_path(args.path + args.model_path)
+    check_path(args.model_path)
     check_path(args.log_path)
     check_path(args.pth_path)
     check_path(args.out_path)
