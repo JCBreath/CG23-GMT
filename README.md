@@ -5,12 +5,12 @@ PyTorch implementation of the paper _GMT: A deep learning approach to generalize
 ## Prerequisite
 
 * Linux
-* Python 3.7+
-* CUDA 11.3+
-* PyTorch 1.11.0+
+* Python >= 3.7
+* CUDA >= 11.3
+* PyTorch >= 1.11.0
 * NumPy
-* RAM 32GB+
-* VRAM 16GB+
+* RAM >= 32GB
+* VRAM >= 16GB
 
 ## Data Format
 The volume contains little-endian floats in column-major order (z-axis, y-axis, x-axis).
