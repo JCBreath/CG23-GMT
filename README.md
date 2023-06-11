@@ -26,7 +26,7 @@ Fine-tune GMT for 4000 epochs
 python3 train.py --data_path /your/data/path --model_path /your/model/path --max_epoch 4000 --dataset dataset_name
 ```
 
-Inference a trained GMT model (translating 0th variable to 1st variable)
+Inference using a trained GMT model (translating 0th variable to 1st variable)
 ```
 python3 inference.py --data_path /your/data/path --model_path /your/model/path --epoch 4000 --dataset dataset_name --source 0 --target 1
 ```
@@ -34,8 +34,8 @@ python3 inference.py --data_path /your/data/path --model_path /your/model/path -
 ## Citation
 ```
 @article{Yao-GMT-CG23,
-  title = {GMT: A deep learning approach to generalized multivariate translation for scientific data analysis and visualization},
-  journal = {Computers & Graphics},
+  title = {{GMT}: A deep learning approach to generalized multivariate translation for scientific data analysis and visualization},
+  journal = {Computers \& Graphics},
   volume = {112},
   pages = {92-104},
   year = {2023},
