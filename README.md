@@ -34,11 +34,11 @@ python3 inference.py --data_path /your/data/path --model_path /your/model/path -
 ## Citation
 ```
 @article{Yao-GMT-CG23,
-title = {GMT: A deep learning approach to generalized multivariate translation for scientific data analysis and visualization},
-journal = {Computers & Graphics},
-volume = {112},
-pages = {92-104},
-year = {2023},
-author = {Siyuan Yao and Jun Han and Chaoli Wang}
+  title = {GMT: A deep learning approach to generalized multivariate translation for scientific data analysis and visualization},
+  journal = {Computers & Graphics},
+  volume = {112},
+  pages = {92-104},
+  year = {2023},
+  author = {Siyuan Yao and Jun Han and Chaoli Wang}
 }
 ```
