@@ -42,3 +42,6 @@ python3 inference.py --data_path /your/data/path --model_path /your/model/path -
   author = {Siyuan Yao and Jun Han and Chaoli Wang}
 }
 ```
+
+## Acknowledgements
+This research was supported in part by the U.S. National Science Foundation through grants IIS-1955395, IIS-2101696, and OAC-2104158, and the U.S. Department of Energy through grant DE-SC0023145.
